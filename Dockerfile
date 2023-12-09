@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM gcc:latest
 
 MAINTAINER Yago Iglesias <yago.iglesias-vazquez@etu.u-paris.fr>
 
@@ -6,8 +6,6 @@ MAINTAINER Yago Iglesias <yago.iglesias-vazquez@etu.u-paris.fr>
 RUN apt-get update 
 RUN apt-get upgrade -y
 
-# Basic c packages
-RUN apt-get install -y build-essential
 
 # Install valgrind
 RUN apt-get install -y valgrind
