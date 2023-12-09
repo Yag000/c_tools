@@ -4,7 +4,7 @@ MAINTAINER Yago Iglesias <yago.iglesias-vazquez@etu.u-paris.fr>
 
 # Set up apt
 RUN apt-get update 
-RUN apt-get upgarde -y
+RUN apt-get upgrade -y
 
 # Basic c packages
 RUN apt-get install -y build-essential
